@@ -1,20 +1,24 @@
-import math
+from math import exp
+from math import sqrt
+
 # input
 print("Welcome to the velocity calculator. Please enter the following: ")
-m = float(input("Mass (in kg): "))
-g = float(input("Gravity (in m/s^2, 9.8 for Earth, 24 for Jupiter): "))
-t = float(input("Time (in seconds): "))
-p = float(input("Density of the fluid (in kg/m^3, 1.3 for air, 1000 for water): "))
-A = float(input("Cross sectional area (in m^2): "))
-C = float(input("Drag constant (0.5 for sphere, 1.1 for cylinder): "))
+mass = float(input("What is Mass? "))
+gravity = float(input("What us the acceleration due to gravity? "))
+time = float(input("What is Time? "))
+density = float(input("What is the density of the fluid? "))
+area = float(input("What is the cross sectional area of the object? "))
+drag_cont = float(input("What is the drag constant? (0.5 for sphere, 1.1 for cylinder) "))
 
 #calculate 1
-c = (1 / 2) * p * A * C
+lowercase_c = (1 / 2) * density * area * drag_cont
 
 #calculate  2
-v = math.sqrt(m * g / c) * (1 - math.exp((-math.sqrt(m * g * c) / m) * t))
+velocity = sqrt(mass * gravity / lowercase_c) * (1 - exp((-sqrt(mass * gravity * lowercase_c) / mass) * time))
 
 #output
 print()
-print(f"The inner value of c is: {c:.3f}")
-print(f"The velovity after {t} seconds is: {v:.3f} m/s")
+print(f"The inner value of c is: {lowercase_c:.3f}")
+print(f"The velovity after {time} seconds is: {velocity:.3f} m/s")
+
+

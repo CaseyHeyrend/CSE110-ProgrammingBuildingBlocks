@@ -18,4 +18,3 @@ v = math.sqrt(m * g / c) * (1 - math.exp((-math.sqrt(m * g * c) / m) * t))
 print()
 print(f"The inner value of c is: {c:.3f}")
 print(f"The velovity after {t} seconds is: {v:.3f} m/s")
-
