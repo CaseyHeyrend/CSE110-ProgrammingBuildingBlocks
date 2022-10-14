@@ -19,3 +19,4 @@ if grade >= 70:
     print("Congratulations! You passed the class!")
 else:
     print("Stay focused and you'll get it next time!")
+
