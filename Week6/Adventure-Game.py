@@ -1,6 +1,3 @@
-from tkinter import END
-
-
 print("Welcome to the Adventure Game!")
 print("You are walking through a dark forest. You already had a flashlight. So no worries. But you come to a fork in the forest. Which way do you go, RIGHT or LEFT?")
 
