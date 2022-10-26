@@ -2,7 +2,7 @@ secret_word = "magic"
 
 print("Welocme to the word guessing game!")
 
-secret_word = "magic"
+secret_word = "frost"
 
 guesses = ''
 turns = 6
