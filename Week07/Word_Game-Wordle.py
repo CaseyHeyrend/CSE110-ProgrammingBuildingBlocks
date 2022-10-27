@@ -1,4 +1,4 @@
-secret_word = "magic"
+secret_word = "frost"
 
 print("Welocme to the word guessing game!")
 print()
