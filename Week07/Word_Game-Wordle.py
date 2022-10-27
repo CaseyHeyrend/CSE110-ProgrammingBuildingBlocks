@@ -6,7 +6,8 @@ secret_word = "frost"
 
 guesses = ''
 turns = 6
-while turns > 0:#counts the number of times a user fails 
+
+while turns > 0:#counts the number of times a user fails
     guess = str(input("Guess the word: "))
     if guess == secret_word:
         print("You guessed the word correctly!")
