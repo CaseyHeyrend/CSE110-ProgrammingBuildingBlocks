@@ -18,9 +18,9 @@ while turns > 0:#counts the number of times a user fails
         print(f"You have {turns} attempt(s),\n ")
         for char, word in zip(secret_word, guess):
             if word in secret_word and word in char:
-                print(word + "_")
+                print(word + " ")
             elif word in secret_word:
-                print(word + "_")
+                print(word + " ")
             else:
                 print("_")
                 print(word, end= " ")
