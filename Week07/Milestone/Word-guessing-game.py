@@ -5,7 +5,7 @@ import random
 print("Welocme to the word guessing game!")
 
 words = ['autumn', 'halloween', 'pumpkin', 'magic', 'fall', 'witch', 
-        'football', 'turkey', 'jack', 'spirit', 'snow', 'winter']#12 words
+        'football', 'turkey', 'jack', 'spirit', 'frost', 'winter']#12 words
 
 #Function will choose one random
 #word from this list of words
