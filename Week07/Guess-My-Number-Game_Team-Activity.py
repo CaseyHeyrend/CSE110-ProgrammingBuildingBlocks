@@ -10,7 +10,7 @@ guess = -1
 
 while guess != magic_number:
     guess = int(input("What is your guess? "))
-    guess_count = guess_count + 1#Stretch challenge
+    guess_count = guess_count + 1#Stretch challenge 1
 
     if guess < magic_number:
         print("Higher")
@@ -19,8 +19,8 @@ while guess != magic_number:
     else:
         print("You guessed it")
 
-    print(f"It took you {guess_count} guesses")#Stretch challenge
+    print(f"It took you {guess_count} guesses")#Stretch challenge 1
     
-    keep_playing = input("Would you like to play again (yes/no)? ")#Stretch challenge
+    keep_playing = input("Would you like to play again (yes/no)? ")#Stretch challenge 2
 
-print("Thank you for playing.")#Stretch challenge
+print("Thank you for playing.")#Stretch challenge 2
