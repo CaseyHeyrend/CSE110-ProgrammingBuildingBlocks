@@ -1,20 +1,18 @@
+quote = "In coming days, it will not be possible to survive spiritually without the guiding, directing, comforting, and constant influence of the Holy Ghost."
 
-word = "commitment"
+run_again = "yes"
 
-liked_letter = input("What is your liked letter? ")
+while run_again == "yes":
+    user_number = int(input("Please enter a number: "))
 
-#Core 1 & 2
-for letter in word:
-    if letter.lower() == liked_letter.lower():
-        print(letter.upper(), end="")
-    else:
-        print(letter.lower(), end="")
-print()
+    for i, letter in enumerate(quote):
+        if i % user_number == 0:
+            print(letter.upper(), end="")
+        else:
+            print(letter.lower(), end="")
+    
+    print()
 
-#Core 3
-for letter in word:
-    if letter.lower() == liked_letter.lower():
-        print("_", end="")
-    else:
-        print(letter.lower(), end="")
-print()
+    run_again = input("Would you like to enter another number? ")
+
+print("Goodbye")
