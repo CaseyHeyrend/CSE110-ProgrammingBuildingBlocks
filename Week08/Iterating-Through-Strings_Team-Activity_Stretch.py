@@ -12,7 +12,7 @@ while run_again == "yes":
     
     print()
 
-    run_again = input("Wou;d you like to enter another number? ")
+    run_again = input("Would you like to enter another number? ")
 print()
 
 print("Goodbye!")
