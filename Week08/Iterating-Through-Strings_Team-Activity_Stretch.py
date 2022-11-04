@@ -2,6 +2,7 @@
 word = "commitment"
 
 liked_letter = input("What is your liked letter? ")
+
 #Core 1 & 2
 for letter in word:
     if letter.lower() == liked_letter.lower():
