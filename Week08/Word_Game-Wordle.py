@@ -20,9 +20,9 @@ while turns > 0:#counts the number of times a user fails
             if word in secret_word and word in char:
                 print(word + " ")
             elif word in secret_word:
-                print(word + " ")
+                print(word + "_")
             else:
                 print("_")
-                print(word, end= " ")
+                print(word, end= "_")
         if turns == 0:
             print ("Game over!")
