@@ -1,7 +1,5 @@
 hidden = "frost"
-
-guess = " "
-
+guess = "null"
 count = 0
 print("Welcome to the Word Game!")
 print("Hint: _ _ _ _ _ ")
