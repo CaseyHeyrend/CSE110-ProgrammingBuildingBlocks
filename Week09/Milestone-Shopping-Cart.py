@@ -16,12 +16,12 @@ while True:
     select = int(input("Please enter an action: "))
     item = ""
     if select == 1:
-        while item != "ok":
+        while item != "yes":
             item = input(f"What item would you like to add? ")
             price = float(input(f"What is the price of {item}? "))
             prices.append(price)
 
-            yes = input("Type in yes to continue.")
+            yes = input("Type in yes to continue. ")
             if item != "yes":
                 cart.append(item)
                 print(f"'{item}' has been added to the cart.")
@@ -31,7 +31,7 @@ while True:
         for item in cart:
             print(item,price)
             cart.append(item)
-            yes = input("Press yes to continue.")
+            yes = input("Press yes to continue. ")
             if item != "yes":
                 break
     if select == 3:
@@ -42,12 +42,11 @@ while True:
         for price in total_price:
             sum += price
             print(sum(total_price))
-            yes = input("Press yes to continue.")
+            yes = input("Press yes to continue. ")
             if item != "yes":
                 break
     if select == 5:
-        print("Thank you. Goodbye.")
-        break
+        print("Thank you, Goodbye!")
 
 
 
