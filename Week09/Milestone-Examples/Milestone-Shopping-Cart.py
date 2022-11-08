@@ -18,7 +18,6 @@ while True:
     if select == 1:
             item = input("What item would you like to add? ")
             price = float(input(f"What is the price of {item}? "))
-            prices.append(price)
             print(f"'{item}' has been added to the cart.")
     if select == 2:
         print("The contents of the shopping cart are: ")
