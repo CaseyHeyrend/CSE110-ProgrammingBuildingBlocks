@@ -1,0 +1,27 @@
+# Question 1
+# Strings can contain numbers?
+# True
+
+# Question 4
+# Which of the following follows our style for a variable name with multiple words:
+# egg_carton_count 
+
+# Question 5
+# Which of the following correctly prints the value of the variable "color" in this string?
+# print(f"The color is {color}") 
+
+# Question 6
+# What is a limitation of ints compared to floats?
+# ints can only hold whole numbers (i.e., no decimals) 
+
+# Question 8
+# Once set, variables cannot be changed to a different value (e.g., if x is set to 5 it cannot be later set to 6)
+# False
+
+# Question 9
+# Once set, variables cannot be changed to a different type of data (e.g. if x is set to 5 it cannot be later set to "John")
+# False
+
+# Question 10
+# What does the % operator do?
+# Divides two numbers and returns the remainder 

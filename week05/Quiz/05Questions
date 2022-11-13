@@ -1,0 +1,9 @@
+# Question 6
+# Why might you want to convert a string to lowercase before checking if it is equal to another?
+# So the string still matches even if there is different capitalization
+
+
+# Question 7
+# What is the proper syntax for an "else if" statement in python?
+# elif x == 5:
+
