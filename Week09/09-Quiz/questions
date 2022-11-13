@@ -1,0 +1,20 @@
+#Question 1
+#Which of the following correctly adds an item to the end of a list named my_list? Group of answer choices
+# my_list.append(item)
+
+#Question 2
+#Which of the following can be put into a list?
+# All of the above
+
+#Quest 3
+#Which of the following iterates through the items in a list named the_list, in Python?
+# for item in the_list: 
+
+
+#Question 7
+#Which of the following is the proper way to print the second item in a list named cars?
+# print(cars[1])
+
+#Quest 8
+#Which of the following is the best name for a list of phone numbers?
+# phone_numbers 
