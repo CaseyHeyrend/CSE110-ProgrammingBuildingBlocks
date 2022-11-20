@@ -6,8 +6,7 @@ prices = []
 total = []
 total_price = []
 items = ''
-while True:
-    print()
+while cart != "5":
     print("Please select one of the following: ")
     print("1. Add item")
     print("2. View cart")
@@ -24,15 +23,17 @@ while True:
         if item != "y":
             cart.append(item)
             print(f"'{item}' has been added to the cart.")
-            print(f" The price is ${price}")
+            print(f" The price is ${price:.2f}")
 
     if option == 2:
         print("The contents of the shopping cart are: ")
-        for item in cart:
-            print(item, price)
-            y = input("Press y to continue: ")# To confirm
-            if item != "y":
-                break
+        for i in range(len()):
+            print(f"{item[i]},${price[i]}")
+        #for item in cart:
+            #print(item, price)
+            #y = input("Press y to continue: ")# To confirm
+            #if item != "y":
+                #break
     if option == 3:
         withdraw = int(input("Which item would you like to remove? "))
         cart.remove(withdraw)
