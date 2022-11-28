@@ -1,12 +1,10 @@
 import statistics
-high_vaule = -1
+higher_vaule = -1
 min_vaule = 10000000
-finest_life = -1
+top_life = -1
 min_life = 10000000
-best_Country = ""
-min_Country = ""
-max_entity = ""
-min_entity = ""
+max_entity = "" #Country
+min_entity = "" #Country
 max_year = ""
 min_year = ""
 counter = 0
@@ -22,28 +20,29 @@ with open ("/Users/xxstormynightxx/Documents/GitHub/CSE110-ProgrammingBuildingBl
         year = parts [2]
         expectancy = float(parts[3])
 
-        if expectancy > high_vaule:
-            high_vaule = expectancy
-            max_entity = entity
+        if expectancy > higher_vaule:
+            higher_vaule = expectancy
+            max_entity = entity #Country
             max_year = year
+
         if expectancy < min_vaule:
             min_vaule = expectancy
-            min_entity = entity
+            min_entity = entity #Country
             min_year = year
         if year == year_interst:
             total_age += expectancy
             counter += 1
             average = total_age / counter
-            if expectancy > high_vaule:
-                high_vaule = expectancy
+            if expectancy > higher_vaule:
+                higher_vaule = expectancy
 
-print(f"The overall max life expectancy is: {high_vaule:.2f} from {best_Country} in {max_year}")
-print(f"The overall min life expectancy is: {min_vaule:.2f} from {min_Country} in {min_year}")
+print(f"The overall max life expectancy is: {higher_vaule:.2f} from {max_entity} in {max_year}")
+print(f"The overall min life expectancy is: {min_vaule:.2f} from {min_entity} in {min_year}")
 
 print(f"\nFor the year {year_interst}:")
 print(f"The average life expectancy across all countries was {average:.2f}")
-print(f"The max life expectancy was in {best_Country} with {high_vaule:.2f}")
-print(f"The min life expectancy was in {min_Country} with {min_vaule:.2f}")
+print(f"The max life expectancy was in {max_entity} with {higher_vaule:.2f}")
+print(f"The min life expectancy was in {min_entity} with {min_vaule:.2f}")
 
 
 
