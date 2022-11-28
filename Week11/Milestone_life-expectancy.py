@@ -13,9 +13,6 @@ counter = 0
 total_age = 0
 year_interst = input("Enter the year of interest: ")
 
-
-
-
 with open ("/Users/xxstormynightxx/Documents/GitHub/CSE110-ProgrammingBuildingBlocks/Week11/life-expectancy.csv") as data_file:
     next(data_file,None)
     for line in data_file:
@@ -39,6 +36,7 @@ with open ("/Users/xxstormynightxx/Documents/GitHub/CSE110-ProgrammingBuildingBl
             average = total_age / counter
             if expectancy > high_vaule:
                 high_vaule = expectancy
+
 print(f"The overall max life expectancy is: {high_vaule:.2f} from {best_Country} in {max_year}")
 print(f"The overall min life expectancy is: {min_vaule:.2f} from {min_Country} in {min_year}")
 
