@@ -1,0 +1,7 @@
+with open("myfile.txt") as f:
+
+for line in f:#"for line in f" should be indented
+
+    print(line)
+
+    

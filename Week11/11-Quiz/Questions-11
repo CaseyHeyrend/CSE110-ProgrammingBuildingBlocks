@@ -1,0 +1,31 @@
+# Question 1 *
+# What is the primary benefit of using the "with" syntax to open a file?
+# It ensures that the file will be closed 
+
+# Question 2 
+# Python can edit files, in addition to reading data from them.
+# True
+
+# Question 3
+# How can you remove whitespace characters from the beginning and end of string? 
+# .strip()
+
+# Question 4
+# How can you turn a string into a list of pieces defined by a delimiter?
+# .split()
+
+# Question 5 
+# Which of the following is a valid delimiter for splitting up strings in Python?
+# All of the above
+
+# Question 6
+# Which of the following is the correct syntax for calling the split function on a string named line?
+# line.split(",")
+
+# Question 8
+# Which of the following types of files can be opened in python?
+# All of the above.
+
+# Question 10
+# Which of the following will help you open a file in a different directory/folder in Python?
+# All of these can be helpful
