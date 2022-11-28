@@ -12,8 +12,7 @@ counter = 0
 total_age = 0
 year_interst = input("Enter the year of interest: ")
 
-with open ("/Users/xxstormynightxx/Documents/GitHub/CSE110-ProgrammingBuildingBlocks/Week11/life-expectancy.csv") as data_file:
-    print(os.getcwd())
+with open ("/Users/xxstormynightxx/Documents/GitHub/CSE110-ProgrammingBuildingBlocks/Week12/life-expectancy.csv") as data_file:
     next(data_file,None)
     for line in data_file:
         parts = line.split(",")
