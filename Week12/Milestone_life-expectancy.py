@@ -1,9 +1,7 @@
 import statistics
 import os
-higher_vaule = -1
-min_vaule = 10000000
-top_life = -1
-min_life = 10000000
+higher_vaule = -1 #expectancy or life
+min_vaule = 10000000 #expectancy or life
 max_entity = "" #Country
 min_entity = "" #Country
 max_year = ""
