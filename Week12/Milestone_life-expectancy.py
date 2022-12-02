@@ -1,5 +1,5 @@
 import statistics
-import os
+
 higher_vaule = -1 #expectancy or life
 min_vaule = 10000000 #expectancy or life
 max_entity = "" #Country
@@ -10,7 +10,7 @@ counter = 0
 total_age = 0
 year_interst = input("Enter the year of interest: ")
 
-with open ("/Users/xxstormynightxx/Documents/GitHub/CSE110-ProgrammingBuildingBlocks/Week12/life-expectancy.csv") as data_file:
+with open ("Week12/life-expectancy.csv") as data_file:
     next(data_file,None)
     for line in data_file:
         parts = line.split(",")
@@ -20,20 +20,20 @@ with open ("/Users/xxstormynightxx/Documents/GitHub/CSE110-ProgrammingBuildingBl
         expectancy = float(parts[3])
 
         if expectancy > higher_vaule:
-            higher_vaule = expectancy
+            higher_vaule = expectancy #life
             max_entity = entity #Country
             max_year = year
 
         if expectancy < min_vaule:
-            min_vaule = expectancy
+            min_vaule = expectancy #life
             min_entity = entity #Country
             min_year = year
         if year == year_interst:
-            total_age += expectancy
+            total_age += expectancy #life
             counter += 1
             average = total_age / counter
             if expectancy > higher_vaule:
-                higher_vaule = expectancy
+                higher_vaule = expectancy #life
 
 print(f"The overall max life expectancy is: {higher_vaule:.2f} from {max_entity} in {max_year}")
 print(f"The overall min life expectancy is: {min_vaule:.2f} from {min_entity} in {min_year}")
