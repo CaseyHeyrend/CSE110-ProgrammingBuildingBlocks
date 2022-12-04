@@ -35,8 +35,8 @@ with open ("Week12/life-expectancy.csv") as data_file:
             if expectancy > higher_vaule:
                 higher_vaule = expectancy #life
 
-print(f"The overall max life expectancy is: {higher_vaule:.2f} from {max_entity} in {max_year}")
-print(f"The overall min life expectancy is: {min_vaule:.2f} from {min_entity} in {min_year}")
+print(f"The overall max life expectancy is: {higher_vaule} from {max_entity} in {max_year}")
+print(f"The overall min life expectancy is: {min_vaule} from {min_entity} in {min_year}")
 
 print(f"\nFor the year {year_interst}:")
 print(f"The average life expectancy across all countries was {average:.2f}")
