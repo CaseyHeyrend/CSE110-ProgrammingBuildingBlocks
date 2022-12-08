@@ -1,22 +1,19 @@
-#Wind Chill(ºF) = 35.74 + 0.6215T - 35.75(V0.16) + 0.4275T(V0.16)
-print('=' * 65, 'WIND CHILL ☁ ☁ ☁ ' , '=' * 18)
-vaule = float(input("What is the temperature? "))
-wind = -1
-conversion = formula = 9 * vaule / 5 + 32
-degree = input("Fahrenheit or Celsius (F/C)? ")
-print()
-def C_to_F():
-    formula = 9 * vaule / 5 + 32
-    temperature = formula
-    windchillformula = 35.74 + 0.6215 * temperature - 35.75 * (wind ** 0.16) + 0.4275 * temperature * (wind ** 0.16)
-    return windchillformula
-def wind_chill():
-    formulawc = 35.74 + 0.6215 * vaule - 35.75 * (wind ** 0.16) + 0.4275 * vaule * (wind ** 0.16)
-
-#def wind_chill_formula(temperature, speed_c):
-    #return round(35.74 + 0.6215 * temperature - 35.75 * (wind ** 0.16) + 0.4275 * temperature * (wind ** 0.16), 2)
-#def wind_chill_formula(temperature_c, speed_a):
-    #return round(35.74 + 0.6215 * temperature_c - 35.75 * (speed_a ** 0.16) + 0.4275 * temperature_c * (speed_a ** 0.16), 2)
-
+# Wind Chill(F)  = 35.74 + 0.6215T - 35.75(V^0.16) + 0.4275T(V^0.16)
 # 35.74 + 0.6215 * temperature - 35.75 * (speed_c ** 0.16) + 0.4275 * temperature * (speed_c ** 0.16), 2
 # Where, T = Air Temperature(F) V = Wind Speed (mph)
+
+def wind_chill_formula(temperature, speed_c):
+    return round(35.74 + 0.6215 * temperature - 35.75 * (speed_c ** 0.16) +0.4275 * temperature * (speed_c ** 0.16), 2)#Fahrenheit
+def wind_chill_formula_c(temperature_c, speed_a):
+    return round(35.74 + 0.6215 * ((temperature_c * (9 / 5)) + 32) - 35.75 * (speed_a **0.16) + 0.4275 * ((temperature_c * (9 / 5)) + 32) * (speed_a ** 0.16), 2)#Celsius
+
+temperature = float(input('What is the temperature? '))
+degree = input("Fahrenheit or Celsius (F/C)? ")
+for speed_w in range(5, 65, 5):
+    speed_c = speed_w
+    if degree == 'F':
+            print(f'At temperature {temperature}F, and wind speed {speed_w} mph, thewindchill is: {wind_chill_formula(temperature, speed_c)}F.')
+    elif degree == 'C':
+        temperature_c = temperature
+        speed_a = speed_w
+        print(f'At temperature {temperature}F, and wind speed {speed_w} mph, thewindchill is: {wind_chill_formula_c(temperature_c, speed_a)}F.')
