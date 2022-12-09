@@ -1,20 +1,25 @@
 from math import pi
 
 def compute_area_square(side):
+    area = compute_area_rectangle(side, side)
     return side * side
+
 def compute_area_rectangle(length, width):
     return length * width
+
 def compute_area_circle(radius):
     return pi * radius * radius
+
 def compute_area(shape, vaule1, vaule2=0):
     area = -1
+
     if shape == "square":
         area = compute_area_square(vaule1)
     elif shape == "circle":
         area = compute_area_circle(vaule1)
     elif shape == "rectangle":
         area = compute_area_rectangle(vaule1, vaule2)
-
+        
     return area
     
 shape = ""
