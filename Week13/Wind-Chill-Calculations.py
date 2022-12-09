@@ -11,9 +11,9 @@ temperature = float(input('What is the temperature? '))
 degree = input("Fahrenheit or Celsius (F/C)? ")
 for speed_w in range(5, 65, 5):
     speed_c = speed_w
-    if degree == 'F':
-            print(f'At temperature {temperature}F, and wind speed {speed_w} mph, thewindchill is: {wind_chill_formula(temperature, speed_c)}F.')
-    elif degree == 'C':
+    if degree == 'F':#Fahrenheit
+            print(f'At temperature {temperature}F, and wind speed {speed_w} mph, the Wind Chill is: {wind_chill_formula(temperature, speed_c)}F.')
+    elif degree == 'C':#Celsius
         temperature_c = temperature
         speed_a = speed_w
-        print(f'At temperature {temperature}F, and wind speed {speed_w} mph, thewindchill is: {wind_chill_formula_c(temperature_c, speed_a)}F.')
+        print(f'At temperature {temperature}F, and wind speed {speed_w} mph, the Wind Chill is: {wind_chill_formula_c(temperature_c, speed_a)}F.')
