@@ -1,0 +1,43 @@
+# Question 1
+# Which of the following is the correct way to call that function, passing it a value of 25, and storing the result into a variable "new_age"?
+# new_age = calculate_next_age(25)
+
+
+# Question 2
+# Which type of data will Python allow to be passed for the year parameter?
+# All of the above.
+
+# Question 3
+# 
+# 3
+
+
+# Question 4
+# 
+# 3
+
+# Question 5
+# 
+# 4
+
+# Question 6
+# 
+# 3
+
+# Question 7
+# 
+# 4
+
+# Question 8
+# 3
+#
+
+# Question 9
+# Something else
+# None
+
+# Question 10
+# 10
+
+
+
